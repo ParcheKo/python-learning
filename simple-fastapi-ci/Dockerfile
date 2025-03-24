@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 WORKDIR /app
-COPY . .
+COPY ./simple-fastapi-ci/ .
 RUN pip install -r requirements.txt
 RUN pip install -r requirements-deploy.txt
 
